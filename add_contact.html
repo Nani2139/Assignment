@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Contact</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Add New Contact</h1>
+
+    <!-- Add Contact Form -->
+    <form id="contactForm" class="mt-4">
+      <div class="form-group">
+        <label for="contact_name">Name</label>
+        <input type="text" class="form-control" id="contact_name" required>
+      </div>
+      <div class="form-group">
+        <label for="contact_role">Role</label>
+        <input type="text" class="form-control" id="contact_role" required>
+      </div>
+      <div class="form-group">
+        <label for="contact_phone">Phone Number</label>
+        <input type="text" class="form-control" id="contact_phone" required>
+      </div>
+      <div class="form-group">
+        <label for="contact_email">Email</label>
+        <input type="email" class="form-control" id="contact_email" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Contact</button>
+    </form>
+  </div>
+
+  <!-- Include JavaScript -->
+  <script src="add_contact.js"></script>
+</body>
+</html>

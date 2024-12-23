@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lead Management Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Lead Management Dashboard</h1>
+
+    <!-- Add Lead Form -->
+    <div id="add-lead-form" class="mt-4">
+      <h2>Add New Lead</h2>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+        <div class="form-group">
+          <label for="contact_number">Contact Number</label>
+          <input type="text" class="form-control" id="contact_number" required>
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select class="form-control" id="status">
+            <option value="New">New</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="assigned_kam">Assigned KAM</label>
+          <input type="text" class="form-control" id="assigned_kam" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Lead</button>
+      </form>
+    </div>
+
+    <!-- Lead List -->
+    <div id="lead-list" class="mt-5">
+      <h2>All Leads</h2>
+      <div id="lead-table-container"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="mt-5"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
